@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="foreground_red">#ffe7205a</color>
+    <color name="foreground_white">#ffffffff</color>
+    <color name="foreground_yellow">#ffcdcd00</color>
+    <color name="foreground_green">#ff00cd00</color>
+    <color name="foreground_blue">#ff5cace6</color>
+    <color name="background_dark">#ff000000</color>
+    <color name="background_gray">#ff666666</color>
+    <color name="background_blue">#ff1381b3</color>
+    <color name="transparent">#00000000</color>
+    <drawable name="background_dark">@color/background_dark</drawable>
+    <drawable name="background_gray">@color/background_gray</drawable>
+    <drawable name="background_blue">@color/background_blue</drawable>
+    <drawable name="background_red">@color/foreground_red</drawable>
+    <drawable name="background_module_default">@drawable/background_blue</drawable>
+    <drawable name="background_module_selected">@drawable/background_red</drawable>
+
+    <color name="body_text_1">#ff000000</color>
+    <color name="body_text_2">#99000000</color>
+    <color name="body_text_disabled">#66000000</color>
+
+    <color name="body_text_1_inverse">#ffffffff</color>
+    <color name="body_text_2_inverse">#99ffffff</color>
+
+    <color name="body_text_1_positive">#ff669900</color>
+    <color name="body_text_1_negative">#ffff4444</color>
+
+    <color name="accent_1">#ff4683ec</color>
+
+    <color name="all_track_color">#ff222222</color>
+    <color name="home_pane_header">#99000000</color>
+
+    <color name="past_background_color">#11000000</color>
+
+    <!-- Google+ -->
+    <color name="stream_name_color">#333</color>
+    <color name="stream_link_color">#ff6f8fc7</color>
+    <color name="stream_content_color">#333</color>
+    <color name="stream_reshare_line_color">#ffcccccc</color>
+    <color name="default_stream_image_background">#eee</color>
+
+</resources>

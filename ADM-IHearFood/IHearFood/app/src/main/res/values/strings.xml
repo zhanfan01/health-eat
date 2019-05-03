@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">IHearFood</string>
+    <string name="record">Record</string>
+    <string name="stop">Stop</string>
+    <string name="start_audio_service">"com.eatingdetection.gy.ihearfood.Start_Record"</string>
+
+    <string name="default_pipeline">        {
+         "name":"smarteater",
+         "version":1,
+         "archive": {
+            "@schedule":{"interval":3600}
+         },
+         "upload":{
+            "url":\"http://swin06.cs.uml.edu/eat/data\",
+            "wifiOnly":true,
+            "@schedule":{"interval":3600}
+         },
+         "update": {
+                        "url": \"http://swin06.cs.uml.edu/eat/config\",
+                        "@schedule": {"interval": 86400}
+         },
+         "data":[
+             "swin.smarteater.probes.ScreenProbe",
+             "swin.smarteater.probes.NotificationProbe",
+             "swin.smarteater.probes.ApplicationUsageProbe",
+             "swin.smarteater.probes.MVPHistoryProbe",
+             "swin.smarteater.probes.MVPPlaceProbe",
+             {"@type":"swin.smarteater.probes.PitchFeatureProbe",
+              "debug": false
+             },
+             {"@type":"swin.smarteater.probes.MyLightSensorProbe",
+              "sensorDelay":"normal"},
+             {"@type":"swin.smarteater.probes.MyProximitySensorProbe",
+              "sensorDelay":"normal"},
+             {"@type":"swin.smarteater.probes.AudioAppUsageProbe",
+              "debug":false
+             },
+             "swin.smarteater.probes.UIEventProbe",
+             "swin.smarteater.probes.RingModeProbe",
+             "edu.mit.media.funf.probe.builtin.AndroidInfoProbe"
+             ]
+         }
+    </string>
+
+</resources>
